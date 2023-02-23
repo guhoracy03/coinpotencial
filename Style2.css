@@ -1,0 +1,288 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+JP:wght@700&display=swap');
+ /* personalização Inputs*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#050505;
+}
+
+#inputNameCurrency, #inputNameCurrency2{
+    
+    height: 40px;
+    width: 270px;
+    background-image: linear-gradient(-225deg,#a743d5,#7d31db 48%,#5922e5);
+    padding: 0px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    color: #d8d8d8;
+    border: .5px solid #2d2d2d;
+    
+}
+
+#inputNameCurrency[type=value]{
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+}
+
+
+::-webkit-input-placeholder{color:rgba(240, 240, 240,0.7); font-family: 'inter', sans-serif;}
+input::-moz-placeholder{color: #777777;}
+
+.coinContainer, .coinContainer2{
+    width: 270px;
+    background-color: #282540;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: .5px solid #2d2d2d;
+    height: 150px;
+    overflow: auto;
+    display: none;
+    
+  
+}
+
+::-webkit-scrollbar{
+    background-color: #1d1d1d;
+    width: 7px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #5b5b5b;
+    border-radius: 5px;
+}
+
+.dropDownMenuItem, .dropDownMenuItem2{
+    height: 50px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    transition: .3s;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.dropDownMenuItem > img{
+    width: auto;
+    padding: 0px 5px;
+    margin-right: 10px;
+    height: 24px;
+    float: left;
+}
+
+.dropDownMenuItem2 > img{
+    width: auto;
+    padding: 0px 5px;
+    margin-right: 10px;
+    height: 24px;
+    float: left;
+}
+
+.dropDownMenuItem:hover, .dropDownMenuItem2:hover{
+   background-color: #121212;
+   padding-left: 10px;
+
+}
+
+.coinName{
+    font-size: 14px;
+    color: #d8d8d8;
+    font-family: 'inter', sans-serif;
+    padding: 2px 0px;
+    margin: 0 auto;
+}
+
+.coinSymbol{
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
+    padding: 2px 20px;
+    color: #d8d8d8;
+    float: right;
+    margin: 0 auto;
+    text-transform: uppercase;  
+}
+
+
+.inputContent,.inputContent2{
+    max-width: 269px;
+    width: 269px;
+    height: 35px;
+    background-color: rgba(40, 37, 64,0.8);
+    display: flex;  
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: none;
+}
+
+
+
+#logo{
+    width: 25px;
+    height: 25px;
+    margin-left:10px;
+    
+}
+
+.inputContent > span{
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin:0px 5px ;
+}
+
+.inputContent2 > span{
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin:0px 5px ;
+}
+
+
+#closeCircle{
+    color: #d8d8d8;
+    width: 25px;
+    height: 25px;
+    margin-left: 234px ;
+    position: absolute;
+}
+
+#closeCircle:hover{width: 28px; height: 28px; cursor: pointer; margin-left: 232px; transition: 0.3s;}
+
+/*Personalização pagina completa*/
+header{
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+header > img{
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    padding:5px 5px;
+}
+
+header > #pageTitle{
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.headerDownContainer{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.headerDownContainer >span{
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.headerDownContainer >span >b{color: #bc6ae2;font-size: 17px;}
+
+.headerDownContainer >p{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: white;
+    width: 270px;
+    margin: 30px 36px 0px 36px;
+}
+.headerDownContainer >p >b{ font-size: 15px; color: #bc6ae2;}
+
+.container{
+    margin-top: 0px;
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 240px;
+}
+
+.searchContainer{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 210px;
+}
+
+#swapIcon{
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    padding: 7px 7px;
+    color: white;
+    display: flex;
+}
+
+.pageDownContainer{
+    display: none;
+    width: 100%;
+    height: 50px;
+    justify-content:center;
+}
+
+.calcResult{
+    background-color: rgba(40, 37, 64, 0.8);
+    border-radius: 15px;
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 280px;
+    height: 100px;
+    margin-top: -150px;
+    display: flex;
+    justify-content:center; 
+}
+
+#marketCapText,#marketCapText2{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: white;
+    display: none;
+}
+.calcResult > #result{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 22px;
+}
+
+#CoinCompareImage{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+#coinsCompareDescription{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+}
+
+#resultPercentual{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-left: 5px;
+}

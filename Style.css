@@ -1,0 +1,72 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+   
+
+
+#inputNameCurrency{
+    height: 40px;
+    width: 250px;
+    background-color: #272626;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    color: #d8d8d8;
+    border: .5px solid #2d2d2d;
+}
+::-webkit-input-placeholder{color:#777777;}
+input::-moz-placeholder{color: #777777;}
+
+.coinContainer{
+    font-family: 'Inter', sans-serif;
+    width: 250px;
+    background-color: #272626;
+    border-radius: 5px;
+    margin-top: 10px;
+    border:.5px solid #2d2d2d;
+    height:210px;
+    overflow: auto;
+    display: block;
+    border: 1px red solid;
+}
+
+::-webkit-scrollbar{
+    background-color: #1d1d1d;
+    width: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #5b5b5b;
+    border-radius: 5px;
+}
+
+
+
+.dropDownMenuItem{
+    height: 50px;
+    width: 240px;
+    padding: 16px 15px;
+    box-sizing: border-box;
+    transition: .3s;
+    cursor: pointer;
+    font-size: 14px;
+    color: #777777; 
+}
+
+
+
+.dropDownMenuItem > img{
+    width: 30px;
+    height: auto;
+    
+    padding: 10px 10px;
+
+}
+
+
+.dropDownMenuItem:hover{
+    background-color: #121212;
+    padding-left: 30px;
+    transition: .3s;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CoinPotencial</title>
+    <link rel="stylesheet" href="Style2.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
+</head>
+<body>
+    <header>
+        <img src="Logo_conpotencial.png" alt="">
+            <span id="pageTitle">COINPOTENCIAL</span>    
+   </header>
+   <div class="headerDownContainer">
+    <span>Exibir preço da moeda <b>A</b><br>
+         com o valor de mercado da moeda <b>B</b> </span>
+        <p>Selecione <b>A</b> </p>
+            <p>Selecione <b>B</b> </p>
+   </div>
+   
+    <div class="container">
+        <div class="searchContainer">
+            <div class="inputContent"><img id="logo" src="" alt="">
+                <span id="coinNameSelected"></span><span id="coinPriceSelected"></span><ion-icon id="closeCircle" name="close-circle" onclick="removeCoin(1)"></ion-icon></div>
+                    <input type="text" id="inputNameCurrency" 
+                        placeholder="ex Ethereum" autocomplete="off" 
+                        onfocus="MenuDropDownDisplay(0)" onblur="MenuDropDownDisplay(1)"></input>
+            
+                <div class="dropDown">
+                    <div class="coinContainer"><div class="listDropDown"></div>
+                    </div>      
+                </div>  
+        </div>
+                     <ion-icon id="swapIcon" name="swap-horizontal-sharp"></ion-icon></ion-icon>
+        
+         <div class="searchContainer">
+            <div class="inputContent2"><img id="logo" src="" alt="">
+                <span id="coinNameSelected2"></span><span id="coinPriceSelected2"></span><ion-icon id="closeCircle" onclick="removeCoin(2)" name="close-circle"></ion-icon></div>
+                    <input type="text" id="inputNameCurrency2" 
+                        placeholder="ex Bitcoin" autocomplete="off" 
+                        onfocus="MenuDropDownDisplay2(0)" onblur="MenuDropDownDisplay2(1)"></input>
+        
+                <div class="dropDown2">
+                    <div class="coinContainer2"><div class="listDropDown2"></div>
+                    </div>      
+                </div> 
+        </div> 
+    </div>  
+
+<div class="pageDownContainer">
+    <div class="calcResult">
+        <p id="coinsCompareDescription"></p>
+        <img id="CoinCompareImage" src="" alt="">
+        <div id="result"></div>
+        <span id="resultPercentual"></span>
+        <p id="marketCapText"></p>
+        <p id="marketCapText2"></p>
+    </div>
+
+</div>
+
+<script src="Script.js"></script>
+</body>
+</html>
